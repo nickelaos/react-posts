@@ -6,11 +6,12 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Post from './components/Post'
+import { config } from "./constants"
 
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={config.PUBLIC_URL}>
                 <div className="App">
                     <Header/>
                     <div id="body">
