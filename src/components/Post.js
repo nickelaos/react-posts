@@ -11,8 +11,6 @@ class Post extends Component {
 
     render() {
 
-        console.log(this.state);
-
         const user = this.state.user ? (
             <div className="card-header bg-dark">
                 <p className="mb-0 font-italic text-white">Author: {this.state.user.name}</p>
