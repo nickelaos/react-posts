@@ -10,7 +10,7 @@ import Post from './components/Post'
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <Header/>
                     <div id="body">
