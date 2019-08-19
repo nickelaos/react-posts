@@ -1,0 +1,26 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+@import "general";
+
+#root {
+  background-color: $grey;
+
+  @import "header";
+
+  #body {
+    min-height: calc(100vh - 216px);
+    margin: 25px 0;
+
+    #posts {
+      .card {
+        height: calc(100% - 20px);
+      }
+    }
+
+    @import "card";
+    @import "pagination";
+  }
+
+  @import "footer";
+}

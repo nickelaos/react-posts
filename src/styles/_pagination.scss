@@ -1,0 +1,15 @@
+.pagination {
+  margin-top: 25px;
+  justify-content: center;
+
+  .page-item {
+    cursor: pointer;
+  }
+
+  .current-page {
+    .page-link {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
